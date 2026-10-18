@@ -102,18 +102,7 @@
         </div>
     </section>
 
-    <footer id="contact">
-
-        
-<a href="https://wa.me/233535060923"
-   class="whatsapp-btn"
-   target="_blank"
-   rel="noopener noreferrer">
-   Contact Us on WhatsApp
-</a>
-
-        <p>© 2026 KingTech Solutions | Building Tomorrow.</p>
-    </footer>
+    
 
 <script>
 const menuToggle = document.getElementById("menu-toggle");
@@ -163,9 +152,9 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     status.textContent = "Sending message...";
 
     emailjs.sendForm(
-        "service_ikmver9",
-        "template_x52f5dt",
-        this
+    "service_xixsyhe",
+    "template_x52f5dt",
+    this
     ).then(() => {
         status.textContent = "Message sent successfully!";
         this.reset();
@@ -175,5 +164,51 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     });
 });
 </script>
+<footer id="contact">
+
+        
+<a href="https://wa.me/233535060923"
+   class="whatsapp-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+   Contact Us on WhatsApp
+</a>
+
+        <p>© 2026 KingTech Solutions | Building Tomorrow.</p>
+    </footer>
+    
+<button id="back-to-top" aria-label="Back to top" title="Back to top">
+    ↑
+</button>
+
+
+<a href="https://wa.me/233535060923"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with KingTech on WhatsApp">
+    ☎
+</a>
+
+<script>
+const topButton = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        topButton.classList.add("visible");
+    } else {
+        topButton.classList.remove("visible");
+    }
+});
+
+topButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script>
+
+
 </body>
 </html>
